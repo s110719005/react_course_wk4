@@ -11,6 +11,10 @@ export default function Header({title}) {
             onClick={()=>setIsOnTouch(!isOnTouch)}
             isOnTouch={isOnTouch} 
          />
+         <div className="hamNav">
+            <NavBar isOnTouch={isOnTouch} />
+         </div>
+         
          <Link to="/">
             <h1 className="header-title">
                {title}
@@ -21,7 +25,7 @@ export default function Header({title}) {
             An example made by Create-React-App.
          </p>
          <hr className="hr-header-line" />
-         <NavBar isOnTouch={isOnTouch} />
+         
       </div>
    );
 }
